@@ -14,7 +14,7 @@ class CashRegister
   
  
   def add_item (title, price, quantity =1)
-    self.total += price * quantity
+    @total += price * quantity
     self.items.concat ([title] * quantity)
     self.transaction.push(price * quantity)
     
